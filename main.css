@@ -1,0 +1,41 @@
+body {
+	background-color: black;
+	background-repeat: repeat;
+	color: #d9d9d9;
+	font-family: "Open Sans", "Arial";
+}
+
+a {
+	color: #00a2e7;
+}
+
+a:visited {
+	color: #ca1a70;
+}
+
+.secret {
+	transition: transform 0.26s ease, max-height 0.2s ease;
+	transform-origin: top;
+	overflow: hidden;
+	transform: scaleY(0);
+	max-height: 0;
+}
+
+.secret:not(.closed) {
+	transform: scaleY(1);
+	max-height: 100vh;
+}
+
+#secretText {
+	animation: secrets 1s ease-in-out infinite alternate;
+	cursor: pointer;
+	user-select: none;
+}
+
+@keyframes secrets {
+	from {
+	}
+	to {
+		color: rebeccapurple;
+	}
+}

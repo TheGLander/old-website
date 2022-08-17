@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Cool website</title>
+	</head>
+	<body>
+		Hello!<br />
+		Oh cool, no background.<br /><br />
+		Here's some stuff I've made:
+		<ul>
+			<li>
+				<a href="https://g-lander.itch.io/alive-box-adventure">
+					Alive Box Adventure - A small platforming game made for the 666AMES
+					MADE QUICK game jam
+				</a>
+			</li>
+			<li>
+				<a href="/cc_antispeed">
+					cc_antispeed - A utility to speed up and slow down Chip's Challenge
+					2®️
+				</a>
+			</li>
+			<li>
+				<a href="/notcc">
+					NotCC - An incomplete emulator of Chip's Challenge 2®️
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/Cppkies-Team/Cppkies">
+					Cppkies - A modding framework for Cookie Clicker
+				</a>
+				(also:
+				<a href="https://ccrepo.glander.club/">
+					Cppkies Mod Repository - a WIP repository of Cookie Clicker mods </a
+				>)
+			</li>
+		</ul>
+		<span id="secretText">Secret stuff...</span>
+		<div class="secret closed">
+			<ul>
+				<li>
+					<a href="/tworld">
+						An Emscripten build of the Chip's Challenge emulator Tile World.
+					</a>
+				</li>
+				<li>
+					<a href="/genZee">
+						genZee - Generator of a Web2-feeling background.
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+			const secretText = document.querySelector("#secretText");
+			const secret = document.querySelector(".secret");
+			secretText.addEventListener("click", () => {
+				secret.classList.toggle("closed");
+			});
+		</script>
+		<br />
+		<!-- And this is the part the website gets kinda ironic -->
+		<!-- Yes I know web counters are kinda tracking but I doubt it's actually shared with any corp -->
+		<img src="/res/now_anim_button.gif" />
+		<!-- Start of CuterCounter Code -->
+		<a href="https://www.webfreecounter.com/" target="_blank"
+			><img
+				src="https://www.cutercounter.com/hits.php?id=hxfxanc&nd=6&style=81"
+				border="0"
+				alt="hit counter"
+		/></a>
+		<!-- End of CuterCounter Code -->
+		<!-- ы -->
+	</body>
+</html>
